@@ -1,0 +1,271 @@
+*{
+  box-sizing: border-box
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+padding: 0;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  font-size: 5vh;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 16px;
+  font-size: 2.8vh;
+  color: #fff;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.dark{
+  color: #000;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  color: black;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-items{
+  display: flex;
+}
+
+.navbar-link{
+  padding: 8px;
+}
+
+.navbar-link a{
+  color: #fff;
+  opacity:0.6;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Marvel';
+  transition: 0.2s all;
+}
+
+.navbar-link.anchor a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+
+.navbar-link a.active{
+  color: #fff;
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-link a:hover{
+  color: #fff;
+  opacity: 1;
+}
+
+.navbar-link.anchor a:hover::after {
+  width: 100%;
+}
+
+.navbar-right{
+  margin-left: auto;
+}
+
+.navbar-hamburger{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-items,
+  .navbar{
+    flex-direction: column;
+  }
+  .navbar-items{
+    display: none;
+  }
+  .navbar-right{
+    margin-left: 0;
+  }
+  .navbar-hamburger{
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+  .show-items{
+    display: flex;
+    padding-bottom: 16px;
+  }
+}
+
+img.logo{
+  float: left;
+  margin-top:-16px;
+  height: 60px;
+}
+
+img.logooo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 200px;
+}
+
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 50px;
+  float: left;
+  font-size: 30px;
+  margin-top: 16px;
+  font-family:"Marvel";
+  font-weight: bold;
+}
+
+#nav ul{
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+#nav li{
+margin: 20px;
+font-family: Marvel;
+float: left;
+padding-left: 20px;
+}
+#nav li a {
+  color: #fff;
+  opacity:0.6;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Marvel';
+}
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1; }
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img.item {
+    margin: 5px;
+    font-size: 20vw;
+    width: 250px;
+  }
+  .content{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.container_center{
+  flex-direction: column;
+  align-self: center;
+}
+
+.content{
+  margin: 0 auto;
+}
+
+.nav-content{
+
+}
+
+#section1{
+background:url('../img/background00.jpg') 50% 0 no-repeat fixed;
+background-size: cover;
+}
+
+#section2{
+  margin-top: 200dp;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#section3{
+  background: url("../img/background01.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+
+#section4{
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#section5{
+background: url("../img/background10.jpg") 50% 0 no-repeat fixed;
+background-size: cover;
+}
+
+.img_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+
+.item {
+  margin: 5px;
+  font-size: 20vw;
+  width: 300px;
+}
+
+.icon_container{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+img.icon{
+  padding-right: 5px;
+  height:1.5rem;
+  flex-wrap: wrap;
+}
+
+a.link{
+  font-family: 'Raleway', serif;
+  text-decoration: none;
+  color: #fff;
+}
